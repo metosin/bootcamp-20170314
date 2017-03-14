@@ -1,0 +1,35 @@
+@import "colors";
+
+.navbar {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  background-color: $brand-bkg;
+}
+
+.navbar-brand__title {
+  padding: 10px;
+  font-size: 32px;
+  color: $brand-txt;
+}
+
+.navbar-brand__motto {
+  flex: 1 0 auto;
+  font-size: 22px;
+  padding-left: 30px;
+  color: $brand-dark-txt;
+}
+
+.navbar-brand__home {
+  text-decoration: none;
+  color: $brand-txt;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 1px dashed $brand-txt;
+  }
+}

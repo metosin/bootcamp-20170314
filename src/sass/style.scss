@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,900');
+
+* {
+  font-family: 'Muli', sans-serif;
+}
+
+@import "body";
+@import "navbar";
+@import "main";
+@import "books-view";

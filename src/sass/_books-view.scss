@@ -1,0 +1,13 @@
+@import "colors";
+
+.books-view-table {
+
+}
+
+.books-view-row {
+  cursor: pointer;
+  &:hover {
+    background-color: $active-bkg;
+    color: $white;
+  }
+}

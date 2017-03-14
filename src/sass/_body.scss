@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-flow: column nowrap;
+  flex: 1 0 0%;
+}
+
+.loading {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 10px;
+}
+

@@ -1,0 +1,57 @@
+{:init {:txes [[; Entity:
+                ; ========================================
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Entity type"
+                 :db/ident :entity/type
+                 :db/valueType :db.type/keyword
+                 :db/cardinality :db.cardinality/one
+                 :db/index true}
+
+                ; Book:
+                ; ========================================
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Book title"
+                 :db/ident :book/title
+                 :db/valueType :db.type/string
+                 :db/cardinality :db.cardinality/one
+                 :db/unique :db.unique/value
+                 :db/index true}
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Book langs"
+                 :db/ident :book/langs
+                 :db/valueType :db.type/keyword
+                 :db/cardinality :db.cardinality/many
+                 :db/index true}
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Book pages"
+                 :db/ident :book/pages
+                 :db/valueType :db.type/long
+                 :db/cardinality :db.cardinality/one}
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Book authors"
+                 :db/ident :book/authors
+                 :db/valueType :db.type/ref
+                 :db/cardinality :db.cardinality/many
+                 :db/index true}
+
+                ; Authors:
+                ; ========================================
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Author first-name"
+                 :db/ident :author/first-name
+                 :db/valueType :db.type/string
+                 :db/cardinality :db.cardinality/one
+                 :db/index true}
+
+                {:db/id #db/id[:db.part/db]
+                 :db/doc "Author last-name"
+                 :db/ident :author/last-name
+                 :db/valueType :db.type/string
+                 :db/cardinality :db.cardinality/one
+                 :db/index true}]]}}
