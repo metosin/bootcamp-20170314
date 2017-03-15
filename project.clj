@@ -1,4 +1,4 @@
-(defproject bootcamp3 "0.0.0-SNAPSHOT"
+(defproject bootcamp-20170314 "0.0.0-SNAPSHOT"
   :description "Bootcamp 2017-03-14"
   :url "https://github.com/metosin/bootcamp-20170314"
   :repositories {"my.datomic.com" {:url "https://my.datomic.com/repo"}}
@@ -109,7 +109,6 @@
                     ["figwheel"]]]
             "dist" ["with-profile" "dist" "do"
                     ["clean"]
-                    ["build-info"]
                     ["sass4clj" "once"]
                     ["cljsbuild" "once" "dist"]
                     ["uberjar"]]})
