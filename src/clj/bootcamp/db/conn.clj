@@ -16,7 +16,7 @@
   nil)
 
 (mount/defstate conn
-  :start (start "datomic:free://localhost:4334/bootcamp")
+  :start (start "datomic:mem://bootcamp")
   :stop (stop conn))
 
 
